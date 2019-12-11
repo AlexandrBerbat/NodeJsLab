@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Lab Web Node JS",
   "main": "index.js",
+  "prettier": "prettier --config .prettierrc.json --write src/**/*.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
