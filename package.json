@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AlexandrBerbat/NodeJsLab#readme",
   "dependencies": {
     "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2"
   }
 }
