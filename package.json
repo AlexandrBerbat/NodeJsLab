@@ -1,0 +1,19 @@
+{
+  "name": "nodejslab",
+  "version": "1.0.0",
+  "description": "Lab Web Node JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexandrBerbat/NodeJsLab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandrBerbat/NodeJsLab/issues"
+  },
+  "homepage": "https://github.com/AlexandrBerbat/NodeJsLab#readme"
+}
