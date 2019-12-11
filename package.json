@@ -4,7 +4,7 @@
   "description": "Lab Web Node JS",
   "main": "index.js",
   "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-  "precommit":"npm run prettier",
+  "precommit": "npm run prettier",
   "prepush": "call npm run lint && call npm run test",
   "scripts": {
     "prettier": "prettier --config .prettierrc.json --write src/**/*.js",
@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/AlexandrBerbat/NodeJsLab#readme",
   "dependencies": {
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.15",
+    "make": "^0.8.1"
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.28",
