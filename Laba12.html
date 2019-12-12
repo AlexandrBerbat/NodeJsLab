@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Lab 12</title>
+<meta charset = "utf-8"/>
+    <script type="text/javascript">
+      function valid(form){
+          var fail=false;
+          var name=form.name.value;
+          var name_pattern = /[a-z]/;
+          var number= form.number.value;
+          var number_pattern = /\+38[0-9]{10,10}/; 
+          var password=form.password.value;
+          var RePassword=form.RePassword.value;
+          var state=form.state.value;
+          var mail=form.mail.value;
+          var adr_pattern = /[0-9a-z_-]+@[0-9a-z_-]+\.[a-z]{2,5}/i;
+          
+ 
+
+            if(adr_pattern.test(mail)==false)
+              fail += " Email введено не коректно ";
+
+            if(name_pattern.test(name)==false)
+              fail +=" Ім'я введено не коректно ";
+            if(number_pattern.test(number)==false)
+              fail += " Номер введено не коректно ";
+          
+            if(name=="" || name==" ")
+              fail +=" Ввести ім'я "; 
+            if(password=="")
+             fail += " Ввести пароль ";
+            if(password!=RePassword)
+              fail += " Пароль не співпадає ";
+            if(state=="")
+              fail += " Пол не указан ";
+            if(fail)
+                alert(fail);
+            else
+              window.location="http://google.com";
+      }
+    </script>
+</head>
+<body>
+<form action="" method="post"  name="test" id="form" >
+    <table border="1" >
+        <tr><td>
+    <label for="mail">E-mail</label><br/>
+    <input type="text" name="mail" placeholder="@mail" id="mail" /> <hr/>
+    
+    <label for="name">Ім'я: </label><br/>
+    <input type="text" name="name" placeholder="Ім'я" id="name" /> <hr/>
+    
+    <label for="name">Номер: </label><br/>
+    <input type="text" name="number" placeholder="Номер" id="number" /> <hr/>
+
+    <label for="password">Пароль: </label><br/>
+    <input type="password" name="password" placeholder="Пароль" id="password"/> <hr/>
+    
+    <label for="RePassword">Перевірка пароля: </label><br/>
+    <input type="password" name="RePassword" placeholder="Введіть пароль повторно" id="RePassword"/> <hr/>
+    
+    <span>Стать: </span>
+    <input type="radio" name="state" id="male" value="Мужской"/>
+    <label for="male">Чоловік</label>
+    <input type="radio" name="state" id="female" value="Женский"/>
+    <label for="female">Жінка</label><hr/>
+    
+    <input type="button" onclick="valid(document.getElementById('form'))" value="Готово"/>
+    
+            </td></tr>    
+    </form> 
+    
+    
+</body>
+
+</html>
