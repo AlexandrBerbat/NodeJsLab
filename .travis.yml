@@ -7,5 +7,6 @@ script:
  - make test
 deploy:
   provider: heroku
-  api_key: 12f070f6-10be-44bf-9948-0a2aa883bb7c
+  api_key: 
+    secure: 12f070f6-10be-44bf-9948-0a2aa883bb7c
   app: mysterious-woodland-34401
