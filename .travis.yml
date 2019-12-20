@@ -1,10 +1,9 @@
 language: node_js
-os: windows
 node_js:
  - node
 script:
- - make run lint
- - make run test
+ - make lint
+ - make test
 deploy:
   provider: heroku
   api_key: 
