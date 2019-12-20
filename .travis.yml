@@ -1,11 +1,9 @@
 language: node_js
-node_js: 
-  - "stable"
-cache:
-  directories:
-    - "node_modules"
+node_js:
+ - node
+script:
+ - npm run lint
+ - npm run test
 deploy:
   provider: heroku
-  api_key:
-    secure: 2e3229bb-449f-415c-815f-775e8901bd8a
-  app: pacific-escarpment-98371
+  app: mysterious-woodland-34401
