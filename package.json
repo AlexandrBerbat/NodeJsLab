@@ -31,6 +31,7 @@
   "homepage": "https://github.com/AlexandrBerbat/NodeJsLab#readme",
   "dependencies": {
     "eslint-config-airbnb": "^18.0.1",
+    "install-peers": "^1.0.3",
     "lodash": "^4.17.15",
     "make": "^0.8.1"
   },
