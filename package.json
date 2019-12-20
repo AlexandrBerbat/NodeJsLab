@@ -1,4 +1,4 @@
-{
+/*{
   "name": "nodejslab",
   "version": "1.0.0",
   "description": "Lab Web Node JS",
@@ -8,7 +8,6 @@
   "prepush": "call npm run lint && call npm run test",
   "scripts": {
     "start": "node index.js",
-    "prettier": "prettier --config .prettierrc.json --write src/**/*.js",
     "doc": "esdoc --out docs/src/ --readme ./README.md",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": ".eslintrc.json",
@@ -38,6 +37,28 @@
     "eslint": "^6.7.2",
     "husky": "^3.1.0",
     "mocha": "^6.2.2",
+    "prettier": "^1.19.1"
+  }
+}*/
+
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint .",
+    "prettier": "prettier --config .prettierrc.json --write *.js",
+    "precommit": "npm run prettier",
+    "prepush": "npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^6.7.2",
+    "husky": "^3.1.0"
+  },
+  "devDependencies": {
     "prettier": "^1.19.1"
   }
 }

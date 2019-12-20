@@ -2,10 +2,10 @@ language: node_js
 node_js:
  - node
 script:
- - npm run lint
  - npm run test
+notifications:
+  email: false
 deploy:
   provider: heroku
-  api_key: 
-    secure: 12f070f6-10be-44bf-9948-0a2aa883bb7c
+  api_key: $api_key
   app: mysterious-woodland-34401
