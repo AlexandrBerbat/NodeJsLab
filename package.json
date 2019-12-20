@@ -1,4 +1,4 @@
-/*{
+{
   "name": "nodejslab",
   "version": "1.0.0",
   "description": "Lab Web Node JS",
@@ -39,9 +39,9 @@
     "mocha": "^6.2.2",
     "prettier": "^1.19.1"
   }
-}*/
+}
 
-{
+/*{
   "name": "node",
   "version": "1.0.0",
   "description": "",
@@ -61,4 +61,4 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   }
-}
+}*/
