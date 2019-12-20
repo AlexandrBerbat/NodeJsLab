@@ -17,6 +17,12 @@
     "type": "git",
     "url": "git+https://github.com/AlexandrBerbat/NodeJsLab.git"
   },
+  "husky": {
+    "hooks": {
+      "precommit": "npm run precommit",
+      "prepush": "echo 'pushing'"
+    }
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
