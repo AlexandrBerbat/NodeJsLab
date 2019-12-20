@@ -11,17 +11,13 @@
     "prettier": "prettier --config .prettierrc.json --write src/**/*.js",
     "doc": "esdoc --out docs/src/ --readme ./README.md",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": ".eslintrc.json"
+    "lint": ".eslintrc.json",
+    "precommit": "npm run prettier",
+    "prepush": "npm run test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlexandrBerbat/NodeJsLab.git"
-  },
-  "husky": {
-    "hooks": {
-      "precommit": "npm run precommit",
-      "prepush": "echo 'pushing'"
-    }
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +26,7 @@
   },
   "homepage": "https://github.com/AlexandrBerbat/NodeJsLab#readme",
   "dependencies": {
+    "eslint": "^6.7.2",
     "eslint-config-airbnb": "^18.0.1",
     "install-peers": "^1.0.3",
     "lodash": "^4.17.15",
