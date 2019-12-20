@@ -7,5 +7,5 @@ notifications:
   email: false
 deploy:
   provider: heroku
-  api_key: $api_key
+  api_key: $key1
   app: mysterious-woodland-34401

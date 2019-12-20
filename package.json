@@ -1,64 +1,38 @@
 {
-  "name": "nodejslab",
-  "version": "1.0.0",
-  "description": "Lab Web Node JS",
-  "main": "index.js",
-  "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-  "precommit": "npm run prettier",
-  "prepush": "call npm run lint && call npm run test",
-  "scripts": {
-    "start": "node index.js",
-    "doc": "esdoc --out docs/src/ --readme ./README.md",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": ".eslintrc.json",
-    "precommit": "npm run prettier",
-    "prepush": "npm run test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexandrBerbat/NodeJsLab.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexandrBerbat/NodeJsLab/issues"
-  },
-  "homepage": "https://github.com/AlexandrBerbat/NodeJsLab#readme",
-  "dependencies": {
-    "eslint": "^6.7.2",
-    "eslint-config-airbnb": "^18.0.1",
-    "install-peers": "^1.0.3",
-    "lodash": "^4.17.15",
-    "make": "^0.8.1"
-  },
-  "devDependencies": {
-    "conventional-changelog-cli": "^2.0.28",
-    "esdoc": "^1.1.0",
-    "eslint": "^6.7.2",
-    "husky": "^3.1.0",
-    "mocha": "^6.2.2",
-    "prettier": "^1.19.1"
-  }
-}
-
-/*{
-  "name": "node",
+  "name": "package.json",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "eslint .",
-    "prettier": "prettier --config .prettierrc.json --write *.js",
-    "precommit": "npm run prettier",
-    "prepush": "npm run test"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prettier": "prettier --config .prettierrc.json --write src/**/*.js",
+    "doc": "esdoc --out docs/src/ --readme ./README.md",
+    "lint": "eslint.js"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "npm": "5.6.0",
+    "node": "8.10.0"
+  },
   "dependencies": {
-    "eslint": "^6.7.2",
-    "husky": "^3.1.0"
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "postinstall": "^0.6.0",
+    "travis": "^0.1.1"
   },
+  "author": "PashaTechnik",
+  "license": "ISC",
   "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-react": "^7.16.0",
+    "husky": "^3.1.0",
     "prettier": "^1.19.1"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "npm run precommit",
+      "prepush": "echo 'pushing'"
+    }
   }
-}*/
+}
