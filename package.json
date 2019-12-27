@@ -19,7 +19,7 @@
     "postinstall": "^0.6.0",
     "travis": "^0.1.1"
   },
-  "author": "PashaTechnik",
+  "author": "Flexandr",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^6.7.1",
